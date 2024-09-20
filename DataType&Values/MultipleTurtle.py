@@ -18,11 +18,12 @@ tess = turtle.Turtle()
 tess.pensize(Pen_Size)
 
 #Calling Method for Alex
-alex.forward(70)
+alex.forward(80)
 alex.left(120)
-alex.forward(95)
-alex.left(135)
-alex.forward(90)
+alex.forward(80)
+alex.left(120)
+alex.forward(80)
+alex.left(120)
 
 #Calling Method for Tess
 tess.forward(100)
@@ -32,5 +33,6 @@ tess.left(90)
 tess.forward(100)
 tess.left(90)
 tess.forward(75)
+tess.left(90)
 
 wn.exitonclick()
