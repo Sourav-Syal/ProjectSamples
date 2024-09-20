@@ -1,6 +1,6 @@
 print("Hello There")
-Length = int(input("Enter length of rectangle:"))
-Width = int(input("Enter width of rectangle:"))
+Length = float(input("Enter length of rectangle:"))
+Width = float(input("Enter width of rectangle:"))
 
 #Calculating Area and Parameter
 Area = Length * Width
