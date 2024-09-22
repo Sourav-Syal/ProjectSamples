@@ -8,7 +8,7 @@ my_turtle.shape("circle")
 my_turtle.color("Dark Green")
 my_turtle.penup()
 my_turtle.goto(50.00,50.00)
-my_turtle.speed(1)
+my_turtle.speed(10)
 
 for _ in range(15):
   my_turtle.stamp()
