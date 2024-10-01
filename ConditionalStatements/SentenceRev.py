@@ -1,4 +1,4 @@
-p_phrase = "was it a car or a cat I saw"
+p_phrase = input("Please input the sentence that you would like to check:")
 r_phrase = ''
 for char in p_phrase:
     r_phrase = char + r_phrase
