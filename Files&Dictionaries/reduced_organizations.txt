@@ -1,41 +1,4 @@
 Name,Country,Founded
 ==================================
-"Mckinney, Riley and Day",Finland,2015
-Holder-Sellers,Turkmenistan,2004
 Hansen-Everett,Pakistan,2018
-Kidd Group,Bouvet Island (Bouvetoya),2001
-Crane-Clarke,Denmark,2014
-"Keller, Campos and Black",Liberia,2020
-Glover-Pope,United Arab Emirates,2013
-Weiss and Sons,Korea,2011
-Harrell LLC,Guadeloupe,2018
-"Eaton, Reynolds and Vargas",Monaco,2014
-Jenkins Inc,South Africa,2002
-"Greene, Benjamin and Novak",Romania,2012
-Ayala LLC,Philippines,2021
-"Glass, Barrera and Turner",Kyrgyz Republic,2020
-Pineda-Cox,Bolivia,2010
-"Baker, Mccann and Macdonald",Kenya,2013
-Hahn PLC,Belarus,2012
-Arroyo Inc,Grenada,2006
-"Mitchell, Warren and Schneider",Trinidad and Tobago,2021
-Prince PLC,Sweden,2016
-Walton-Barnett,Western Sahara,2001
-"Wallace, Madden and Morris",Germany,2016
-Lawson and Sons,French Southern Territories,2021
-Charles-Phillips,Cote d'Ivoire,2012
-Odom Ltd,Cote d'Ivoire,2012
-Sampson Ltd,Cayman Islands,2005
-"Cherry, Le and Callahan",Nigeria,2017
-Melton-Nichols,Palau,2021
-Potter-Walsh,Turkey,2008
-"Erickson, Andrews and Bailey",Eritrea,2014
-Floyd Ltd,Falkland Islands (Malvinas),2017
-Mccall-Holmes,Benin,2009
-"Cole, Russell and Avery",Mongolia,2000
-Cummings-Rojas,Svalbard & Jan Mayen Islands,2012
-Montes-Hensley,Liechtenstein,2009
-Velazquez-Odom,Djibouti,2002
-Davila Inc,Cocos (Keeling) Islands,2017
-Mays-Preston,Mali,2006
-Watkins-Kaiser,Togo,2009
+Hicks LLC,Pakistan,1970
