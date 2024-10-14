@@ -17,6 +17,7 @@ with open("negative_words.txt") as pos_f:
         if lin[0] != ';' and lin[0] != '\n':
             negative_words.append(lin.strip())
 
+#Function to count number of positive words
 def get_pos(str_sentence):
     str_sentence = strip_punctuation(str_sentence)
     temp_lst = str_sentence.split()
@@ -27,7 +28,7 @@ def get_pos(str_sentence):
             count += 1
     return count
 
-
+#Function to count number of negative words
 def get_neg(str1_sentence):
     str1_sentence = strip_punctuation(str1_sentence)
     temp_lst = str1_sentence.split()
@@ -38,12 +39,13 @@ def get_neg(str1_sentence):
             tot += 1
     return tot
 
-
+#Function to eliminate punctuations from tweet
 def strip_punctuation(str_val):
     for i in punctuation_chars:
         str_val = str_val.replace(i,"")
     return str_val
 
+#Function to write result sets in the file
 def writedatafile(resultingdatafile):
     resultingdatafile.write("Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score")
     resultingdatafile.write("\n")
@@ -56,7 +58,9 @@ def writedatafile(resultingdatafile):
                                                             (get_pos(rows[0]) - get_neg(rows[0]))))
         resultingdatafile.write("\n")
 
-
+#Calling function with the writing object
 writedatafile(resultingdatafile)
+
+#Closing the file...
 twitterdatafile.close()
 resultingdatafile.close()
