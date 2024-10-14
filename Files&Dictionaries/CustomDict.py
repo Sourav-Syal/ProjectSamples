@@ -1,13 +1,13 @@
 import csv
 fruit_price = {}
-with open("Fruit_Price.txt", "r") as file_ref:
+with open("../InventorySorting/Fruit_Price.csv", "r") as file_ref:
     reader = csv.reader(file_ref)
     temp_lst = list(reader)
     for lst in temp_lst[1:]:
         fruit_price[lst[0]] = lst[1]
 
 fruit_quantity = {}
-with open("Fruit_Quantity.txt", "r") as file_obj:
+with open("../InventorySorting/Fruit_Quantity.csv", "r") as file_obj:
     reader = csv.DictReader(file_obj)
     temp_lst1 = list(reader)
     for dictionary in temp_lst1:

@@ -12,4 +12,3 @@ with open("reduced_organizations.txt", "w") as fileobj:
         for rows in temp_lst[1:]:
             if rows[3] == 'Pakistan':
                 writer.writerow([rows[1], rows[3], rows[5]])
-
