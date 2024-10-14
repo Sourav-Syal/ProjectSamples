@@ -1,8 +1,7 @@
+resultingdatafile = open("resulting_data.csv", "w")
+twitterdatafile = open("project_twitter_data.csv", "r")
+
 punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
-def strip_punctuation(str_val):
-    for i in punctuation_chars:
-        str_val = str_val.replace(i,"")
-    return str_val
 
 # list of positive words to use
 positive_words = []
@@ -11,16 +10,6 @@ with open("positive_words.txt") as pos_f:
         if lin[0] != ';' and lin[0] != '\n':
             positive_words.append(lin.strip())
 
-def get_pos(str_sentence):
-    str_sentence = strip_punctuation(str_sentence)
-    temp_lst = str_sentence.split()
-
-    count = 0
-    for word in temp_lst:
-        if word.lower() in positive_words:
-            count += 1
-    return count
-
 # list of negative words to use
 negative_words = []
 with open("negative_words.txt") as pos_f:
@@ -28,18 +17,32 @@ with open("negative_words.txt") as pos_f:
         if lin[0] != ';' and lin[0] != '\n':
             negative_words.append(lin.strip())
 
+def get_pos(str_sentence):
+    str_sentence = strip_punctuation(str_sentence)
+    temp_lst = str_sentence.split()
+
+    count = 0
+    for word in temp_lst:
+        if word in positive_words:
+            count += 1
+    return count
+
+
 def get_neg(str1_sentence):
     str1_sentence = strip_punctuation(str1_sentence)
     temp_lst = str1_sentence.split()
 
     tot = 0
     for word in temp_lst:
-        if word.lower() in negative_words:
+        if word in negative_words:
             tot += 1
     return tot
 
-resultingdatafile = open("resulting_data.csv", "w")
-twitterdatafile = open("project_twitter_data.csv", "r")
+
+def strip_punctuation(str_val):
+    for i in punctuation_chars:
+        str_val = str_val.replace(i,"")
+    return str_val
 
 def writedatafile(resultingdatafile):
     resultingdatafile.write("Number of Retweets, Number of Replies, Positive Score, Negative Score, Net Score")
