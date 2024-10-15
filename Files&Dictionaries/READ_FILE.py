@@ -1,7 +1,5 @@
 check_alpha = input("Input the character/letter for which you want to check number of words start from that letter:")
-num_words = 0
-wrds_s = 0
-accum = 0
+num_words, wrds_s, accum = 0, 0, 0
 third_word = []
 word_list = []
 with open("school_prompt.txt", "r") as ref:
@@ -18,10 +16,8 @@ with open("school_prompt.txt", "r") as ref:
                     word_list.append(temp_str)
                     wrds_s += 1
 
-print("TOTAL WORDS:", num_words)
-print("TOTAL LINES:", accum)
-print("THIRD WORD OF EVERY LINE:")
-print(third_word)
-print("TOTAL WORDS STARTING FROM" + " " + check_alpha + " " + ":" + str(wrds_s))
-print("LIST OF THOSE WORDS:")
-print(word_list)
+print(f"TOTAL WORDS: {num_words}")
+print(f"TOTAL LINES: {accum}")
+print(f"THIRD WORD OF EVERY LINE: {third_word}")
+print(f"TOTAL WORDS STARTING FROM {check_alpha}: {str(wrds_s)}")
+print(f"LIST OF THOSE WORDS: {word_list}")

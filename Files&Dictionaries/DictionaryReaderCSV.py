@@ -1,6 +1,6 @@
 import csv
 
-with open("olympics.txt","r") as file_ref:
+with open("olympics.csv", "r") as file_ref:
     reader = csv.DictReader(file_ref)
     print("LIST OF SPORTSPERSON WHO HAVE WON MEDALS")
     print("============================================")

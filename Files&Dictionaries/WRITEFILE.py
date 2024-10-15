@@ -1,6 +1,6 @@
 import csv
 with open("ReducedOlympics.txt", "w") as file_ref:
-    with open("olympics.txt", "r") as obj:
+    with open("olympics.csv", "r") as obj:
         reader = csv.reader(obj)
         rows = list(reader)
         file_ref.write("LIST OF SPORTSPERSON WHO HAVE WON MEDALS")
