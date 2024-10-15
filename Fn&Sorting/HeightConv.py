@@ -14,8 +14,8 @@ def height_conv(list_height, converter):
 
     return res_list
 
-list_of_input = []
-dict_height = {}
+list_of_input, dict_height = [], {}
+
 signal = 'N'
 while signal != 'Y':
     dict_height['Feet'] = int(input("Enter Feets:"))
